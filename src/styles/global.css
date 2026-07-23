@@ -6,7 +6,7 @@
   --navy-800: #0b213d;
   --navy-700: #123761;
   --blue: #1f63d8;
-  --red: #d9294e;
+  --red: #a50044;
   --gold: #e5ae3d;
   --cream: #f5f1e8;
   --paper: #ece8df;
@@ -41,7 +41,7 @@ button { font: inherit; }
 .site-nav .nav-resume { color: white; padding: 10px 16px; border: 1px solid rgba(255,255,255,.35); border-radius: 999px; }
 .nav-toggle { display: none; width: 42px; height: 42px; border: 1px solid rgba(255,255,255,.25); border-radius: 50%; background: transparent; }
 .nav-toggle span { display: block; width: 17px; height: 1px; margin: 5px auto; background: white; }
-.hero { min-height: min(920px, 100vh); position: relative; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr); align-items: center; gap: clamp(40px, 7vw, 110px); padding-top: 132px; padding-bottom: 76px; color: white; background: radial-gradient(circle at 81% 22%, rgba(31,99,216,.22), transparent 26%), radial-gradient(circle at 75% 80%, rgba(217,41,78,.15), transparent 26%), var(--navy-900); }
+.hero { min-height: min(920px, 100vh); position: relative; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr); align-items: center; gap: clamp(40px, 7vw, 110px); padding-top: 132px; padding-bottom: 76px; color: white; background: radial-gradient(circle at 81% 22%, rgba(31,99,216,.22), transparent 26%), radial-gradient(circle at 75% 80%, rgba(165,0,68,.15), transparent 26%), var(--navy-900); }
 .hero::after { content: ""; position: absolute; left: 0; bottom: 0; width: 45%; height: 4px; background: linear-gradient(90deg, var(--blue) 0 67%, var(--red) 67% 94%, var(--gold) 94%); }
 .field-lines { position: absolute; inset: 0; opacity: .13; pointer-events: none; overflow: hidden; }
 .field-lines::before { content: ""; position: absolute; width: 52%; aspect-ratio: 1.5; right: -7%; top: 23%; border: 1px solid white; }
@@ -60,7 +60,7 @@ button { font: inherit; }
 .button--pending { opacity: .72; cursor: default; }
 .text-link { display: inline-flex; align-items: center; gap: 13px; font-size: 14px; font-weight: 600; border-bottom: 1px solid currentColor; }
 .portrait-frame { position: relative; width: min(430px, 100%); margin-left: auto; aspect-ratio: .79; padding: 16px; border: 1px solid rgba(255,255,255,.18); transform: rotate(1.5deg); }
-.portrait-placeholder { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; gap: 8px; padding: 28px; color: rgba(255,255,255,.44); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; background: linear-gradient(155deg, rgba(31,99,216,.3), rgba(7,20,38,.94) 55%, rgba(217,41,78,.2)); }
+.portrait-placeholder { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: flex-end; gap: 8px; padding: 28px; color: rgba(255,255,255,.44); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; background: linear-gradient(155deg, rgba(31,99,216,.3), rgba(7,20,38,.94) 55%, rgba(165,0,68,.2)); }
 .portrait-initials { margin-bottom: auto; font-family: var(--font-display); font-size: clamp(80px, 11vw, 160px); line-height: 1; letter-spacing: -.12em; color: rgba(255,255,255,.07); }
 .corner { position: absolute; width: 42px; height: 42px; border-style: solid; border-color: var(--gold); }
 .corner--one { left: -9px; top: -9px; border-width: 2px 0 0 2px; }
@@ -107,7 +107,7 @@ button { font: inherit; }
 .section-heading--compact { grid-template-columns: 1fr; }
 .timeline { border-top: 1px solid var(--line); }
 .timeline article { position: relative; display: grid; grid-template-columns: minmax(250px,.8fr) minmax(280px,1.2fr); gap: 50px; padding: 32px 10px 32px 40px; border-bottom: 1px solid var(--line); }
-.timeline-marker { position: absolute; top: 42px; left: 7px; width: 10px; height: 10px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 5px rgba(217,41,78,.12); }
+.timeline-marker { position: absolute; top: 42px; left: 7px; width: 10px; height: 10px; border-radius: 50%; background: var(--red); box-shadow: 0 0 0 5px rgba(165,0,68,.12); }
 .timeline-label { color: var(--blue); font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; }
 .timeline h3 { margin: 8px 0 0; font: 600 22px var(--font-display); }
 .timeline p { margin: 0; color: var(--muted); }
