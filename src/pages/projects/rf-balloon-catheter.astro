@@ -1,0 +1,77 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<BaseLayout
+  title="RF Balloon Catheter Test Bed | Antonio Vazquez"
+  description="Biomedical device research involving RF balloon catheter prototype assembly and iterative tissue-test fixture design."
+>
+  <div id="top" class="page-shell">
+    <Header compact />
+    <main id="main">
+      <section class="case-hero section-pad">
+        <a class="back-link" href="/#work">&larr; Selected work</a>
+        <div class="case-title" data-reveal>
+          <span class="eyebrow">Biomedical research &middot; Cardiovascular devices</span>
+          <h1>RF balloon catheter test bed</h1>
+          <p>Three fixture iterations developed to improve tissue positioning, electrode contact, load distribution, and RF energy-transfer consistency.</p>
+        </div>
+        <div class="case-cover research-cover" data-reveal aria-label="Abstract technical graphic of an RF balloon catheter with electrodes positioned over a silicone test fixture">
+          <div class="catheter-visual" aria-hidden="true">
+            <span class="catheter-tube"></span><span class="catheter-balloon"></span>
+            <span class="catheter-electrode catheter-electrode--one"></span><span class="catheter-electrode catheter-electrode--two"></span>
+            <span class="catheter-fixture"></span>
+          </div>
+          <p>Cardiovascular device research &middot; Three fixture iterations</p>
+        </div>
+        <dl class="case-facts" data-reveal>
+          <div><dt>Role</dt><dd>Undergraduate research assistant</dd></div>
+          <div><dt>Focus</dt><dd>RF contact &amp; fixture consistency</dd></div>
+          <div><dt>Methods</dt><dd>PCB assembly, soldering &amp; testing</dd></div>
+        </dl>
+      </section>
+
+      <section class="case-section section-pad case-section--intro">
+        <div><span class="eyebrow">01 &middot; Context</span><h2>Build a repeatable test condition around a flexible device and tissue.</h2></div>
+        <div class="prose">
+          <p>The project evaluated RF balloon-catheter concepts for fetal hypoplastic left heart syndrome applications. Prototype structures combined balloon geometry with soldered RF PCB components for benchtop and porcine tissue evaluation.</p>
+          <p>Aqueous testing exposed two practical problems: tissue tearing and inconsistent electrode contact.</p>
+        </div>
+      </section>
+
+      <section class="case-section section-pad">
+        <div><span class="eyebrow">02 &middot; Iteration</span><h2>Three test-bed designs refined positioning and contact.</h2></div>
+        <div class="process-line">
+          <article><span>01</span><h3>Assemble</h3><p>Solder RF PCB components to balloon structures for prototype evaluation.</p></article>
+          <article><span>02</span><h3>Observe</h3><p>Identify tissue tearing and inconsistent electrode contact in aqueous tests.</p></article>
+          <article><span>03</span><h3>Redesign</h3><p>Revise test-bed geometry and introduce silicone fixturing.</p></article>
+          <article><span>04</span><h3>Evaluate</h3><p>Assess positioning, contact, load distribution, and denaturing consistency.</p></article>
+        </div>
+      </section>
+
+      <section class="case-section section-pad case-section--dark">
+        <div><span class="eyebrow">03 &middot; Fixture strategy</span><h2>Use compliant support to stabilize tissue without concentrating load.</h2></div>
+        <div class="prose">
+          <p>The redesigned geometry incorporated silicone fixturing to improve tissue positioning and support the RF PCB contact region.</p>
+          <p>The compliant interface helped distribute load while maintaining a more repeatable relationship among the tissue, electrodes, and surrounding aqueous environment.</p>
+        </div>
+      </section>
+
+      <section class="case-section section-pad case-results">
+        <div><span class="eyebrow">04 &middot; Contribution</span><h2>Fixture iteration improved the quality of the experimental setup.</h2></div>
+        <div class="prose">
+          <p>Antonio contributed prototype assembly and three generations of test-bed development aimed at resolving observed testing failures rather than treating the fixture as a fixed constraint.</p>
+          <p>The resulting setup improved tissue positioning, RF PCB contact, load distribution, and energy-transfer consistency for continued device evaluation.</p>
+        </div>
+      </section>
+
+      <section class="next-project section-pad">
+        <span class="eyebrow">Next project</span>
+        <a href="/projects/larm"><span>LARM robotic gripper</span><span aria-hidden="true">&nearr;</span></a>
+      </section>
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>
