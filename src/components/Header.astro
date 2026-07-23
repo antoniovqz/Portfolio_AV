@@ -1,0 +1,24 @@
+---
+interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+---
+
+<header class:list={["site-header", { "site-header--compact": compact }]}>
+  <a class="brand" href="/" aria-label="Antonio Vazquez home">
+    <span class="brand-mark" aria-hidden="true"><span>AV</span></span>
+    <span class="brand-name">Antonio Vazquez</span>
+  </a>
+  <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+    <span></span><span></span>
+  </button>
+  <nav class="site-nav" aria-label="Primary navigation" data-nav>
+    <a href="/#work">Work</a>
+    <a href="/#about">About</a>
+    <a href="/#experience">Experience</a>
+    <a href="/#contact">Contact</a>
+    <a class="nav-resume" href="/resume/Antonio_Vazquez_Resume.pdf" download>Resume</a>
+  </nav>
+</header>

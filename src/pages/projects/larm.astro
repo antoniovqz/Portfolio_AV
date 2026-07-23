@@ -1,0 +1,88 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<BaseLayout
+  title="LARM Robotic Gripper | Antonio Vazquez"
+  description="Mechanical design case study for a compact robotic gripper and three-gear transmission."
+>
+  <div id="top" class="page-shell">
+    <Header compact />
+    <main id="main">
+      <section class="case-hero section-pad">
+        <a class="back-link" href="/#work">← Selected work</a>
+        <div class="case-title" data-reveal>
+          <span class="eyebrow">Mechanical design · Robotics</span>
+          <h1>LARM robotic gripper</h1>
+          <p>A compact end-effector designed to synchronize claw motion, amplify torque, and integrate with a laboratory robotic manipulator.</p>
+        </div>
+        <div class="case-cover" data-reveal aria-label="Temporary schematic placeholder for LARM project media">
+          <div class="case-schematic" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          <p>Project photography, CAD renders, and test media will be added after privacy review.</p>
+        </div>
+        <dl class="case-facts" data-reveal>
+          <div><dt>Role</dt><dd>Gripper mechanism & integration</dd></div>
+          <div><dt>Focus</dt><dd>Motion, torque & tolerances</dd></div>
+          <div><dt>Methods</dt><dd>CAD, prototyping & testing</dd></div>
+        </dl>
+      </section>
+
+      <section class="case-section section-pad case-section--intro">
+        <div><span class="eyebrow">01 · Context</span><h2>A defined contribution inside a larger robotics system.</h2></div>
+        <div class="prose">
+          <p>The broader team developed the laboratory robotic manipulator. Antonio was responsible for the gripper mechanism and its integration requirements.</p>
+          <p>The end-effector needed coordinated claw motion in a compact package, enough gripping force for the intended tasks, and interfaces that respected the rest of the robot’s geometry.</p>
+        </div>
+      </section>
+
+      <section class="case-section section-pad">
+        <div><span class="eyebrow">02 · Requirements</span><h2>Translate system needs into mechanical constraints.</h2></div>
+        <div class="requirement-grid">
+          <article><span>R.01</span><h3>Synchronized motion</h3><p>Both claws needed to move predictably from a shared mechanical input.</p></article>
+          <article><span>R.02</span><h3>Useful torque</h3><p>The transmission needed to support gripping force without unnecessary size.</p></article>
+          <article><span>R.03</span><h3>Compact integration</h3><p>The mechanism had to fit the manipulator envelope and preserve service access.</p></article>
+          <article><span>R.04</span><h3>Reliable contact</h3><p>Silicone contact pads improved grip and protected handled objects.</p></article>
+        </div>
+      </section>
+
+      <section class="case-section section-pad case-section--dark">
+        <div><span class="eyebrow">03 · Mechanism</span><h2>A three-gear transmission coordinated the claw movement.</h2></div>
+        <div class="mechanism-panel">
+          <div class="gear-diagram" aria-label="Abstract placeholder diagram of the three-gear transmission">
+            <span class="gear gear--one"></span><span class="gear gear--two"></span><span class="gear gear--three"></span>
+          </div>
+          <div class="prose">
+            <p>The selected transmission used three gears to connect the input to both claws. The arrangement supported synchronized motion while providing room to tune the output torque.</p>
+            <p>CAD development focused on center distances, clearances, fastener access, and tolerance stack-up. Physical prototypes then exposed the areas that needed adjustment.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section section-pad">
+        <div><span class="eyebrow">04 · Validation</span><h2>Build, observe, adjust, and document.</h2></div>
+        <div class="process-line">
+          <article><span>01</span><h3>Model</h3><p>Define motion, interfaces, and component relationships in CAD.</p></article>
+          <article><span>02</span><h3>Prototype</h3><p>Fabricate the assembly and check fit, access, and range of motion.</p></article>
+          <article><span>03</span><h3>Test</h3><p>Evaluate claw coordination, grip behavior, and integration with the robot.</p></article>
+          <article><span>04</span><h3>Iterate</h3><p>Use observed interference and tolerance issues to refine the next revision.</p></article>
+        </div>
+      </section>
+
+      <section class="case-section section-pad case-results">
+        <div><span class="eyebrow">05 · Results & next iteration</span><h2>A working gripper and a clearer path to refinement.</h2></div>
+        <div class="prose">
+          <p>The mechanism demonstrated synchronized claw motion and the intended transmission concept. The project also created a practical record of the integration details that mattered most.</p>
+          <p>Future work will be documented here once approved results, dimensions, images, and test notes are available. Likely areas include weight reduction, refined contact geometry, and more repeatable quantitative testing.</p>
+        </div>
+      </section>
+
+      <section class="next-project section-pad">
+        <span class="eyebrow">Next project</span>
+        <a href="/#angel"><span>ANGEL soft robotic gripper</span><span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>
