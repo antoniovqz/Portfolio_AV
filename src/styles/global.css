@@ -165,10 +165,8 @@ button { font: inherit; }
 .requirement-grid p, .process-line p { margin: 0; color: var(--muted); font-size: 13px; }
 .case-section--dark { color: white; background: var(--navy-900); }
 .mechanism-panel { display: grid; gap: 55px; }
-.gear-diagram { min-height: 350px; position: relative; background: rgba(255,255,255,.025); border: 1px solid var(--line-light); }
-.gear { position: absolute; display: block; aspect-ratio: 1; border: 2px solid rgba(255,255,255,.55); border-radius: 50%; box-shadow: inset 0 0 0 20px rgba(0,77,152,.14); }
-.gear::after { content: ""; position: absolute; inset: 40%; border-radius: 50%; background: var(--gold); }
-.gear--one { width: 150px; left: 15%; top: 12%; }.gear--two { width: 190px; left: 40%; top: 31%; }.gear--three { width: 125px; right: 8%; top: 12%; }
+.mechanism-graphic { margin: 0; overflow: hidden; background: var(--navy-950); border: 1px solid var(--line-light); box-shadow: 0 28px 55px rgba(0,0,0,.24); }
+.mechanism-graphic img { display: block; width: 100%; height: auto; }
 .case-section--dark .prose { color: rgba(255,255,255,.62); }
 .publication-panel { color: rgba(255,255,255,.68); font-size: clamp(16px,1.2vw,19px); }
 .publication-panel > p { margin: 0 0 24px; }
@@ -230,8 +228,6 @@ button { font: inherit; }
   .case-facts { grid-template-columns: 1fr; }
   .case-facts div { border-bottom: 1px solid var(--line-light); }
   .process-line { grid-template-columns: 1fr; }
-  .gear-diagram { min-height: 300px; }
-  .gear--one { left: 8%; }.gear--two { left: 29%; }.gear--three { right: 3%; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -58,9 +58,16 @@ import Footer from "../../components/Footer.astro";
       <section class="case-section section-pad case-section--dark">
         <div><span class="eyebrow">03 · Mechanism</span><h2>A three-gear transmission coordinated the claw movement.</h2></div>
         <div class="mechanism-panel">
-          <div class="gear-diagram" aria-label="Abstract placeholder diagram of the three-gear transmission">
-            <span class="gear gear--one"></span><span class="gear gear--two"></span><span class="gear gear--three"></span>
-          </div>
+          <figure class="mechanism-graphic">
+            <img
+              src="/images/larm/larm-three-gear-transmission.png"
+              alt="Technical diagram of LARM's three-gear transmission showing the input and output rotating clockwise, the idler rotating counterclockwise, and the output linkage driving synchronized claw motion"
+              width="1672"
+              height="941"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
           <div class="prose">
             <p>The selected transmission used three gears to connect the input to both claws. The arrangement supported synchronized motion while providing room to tune the output torque.</p>
             <p>CAD development focused on center distances, clearances, fastener access, and tolerance stack-up. Physical prototypes then exposed the areas that needed adjustment.</p>
