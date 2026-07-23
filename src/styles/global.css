@@ -27,14 +27,15 @@ a { color: inherit; text-decoration: none; }
 button { font: inherit; }
 .skip-link { position: fixed; left: 16px; top: -60px; z-index: 100; padding: 10px 14px; color: white; background: var(--blue); }
 .skip-link:focus { top: 16px; }
-.page-shell { width: var(--page); margin-inline: auto; overflow: hidden; background: var(--paper); }
+.page-shell { position: relative; width: var(--page); margin-inline: auto; overflow: hidden; background: var(--paper); }
 .section-pad { padding-inline: var(--pad); }
 .site-header { position: absolute; inset: 0 0 auto; z-index: 10; height: 92px; padding: 0 var(--pad); display: flex; align-items: center; justify-content: space-between; color: white; }
 .site-header--compact { position: relative; background: var(--navy-900); border-bottom: 1px solid var(--line-light); }
-.brand { display: inline-flex; align-items: center; gap: 12px; font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em; }
-.brand-mark { width: 38px; height: 43px; display: grid; place-items: center; position: relative; font-size: 12px; letter-spacing: -0.08em; color: var(--gold); border: 1px solid rgba(229,174,61,.7); clip-path: polygon(50% 0, 94% 18%, 88% 76%, 50% 100%, 12% 76%, 6% 18%); }
+.brand { display: inline-flex; align-items: center; gap: 12px; padding: 6px 13px 6px 7px; color: #fff; background: rgba(4,12,24,.82); border: 1px solid rgba(255,255,255,.16); border-radius: 999px; box-shadow: 0 8px 24px rgba(0,0,0,.22); backdrop-filter: blur(12px); font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em; }
+.brand-mark { width: 38px; height: 43px; display: grid; place-items: center; position: relative; font-size: 12px; letter-spacing: -0.08em; color: var(--gold); border: 1px solid rgba(229,174,61,.92); clip-path: polygon(50% 0, 94% 18%, 88% 76%, 50% 100%, 12% 76%, 6% 18%); }
 .brand-mark::before { content: ""; position: absolute; inset: 5px; border: 1px solid rgba(31,99,216,.75); clip-path: inherit; }
 .brand-mark span { position: relative; z-index: 1; }
+.brand-name { color: #fff; text-shadow: 0 1px 12px rgba(0,0,0,.55); }
 .site-nav { display: flex; align-items: center; gap: clamp(20px, 2.5vw, 42px); font-size: 14px; }
 .site-nav a { color: rgba(255,255,255,.72); transition: color .2s ease; }
 .site-nav a:hover, .site-nav a:focus-visible { color: white; }
@@ -166,6 +167,7 @@ button { font: inherit; }
 
 @media (max-width: 900px) {
   .site-header { height: 78px; }
+  .brand { padding-right: 7px; }
   .brand-name { display: none; }
   .nav-toggle { display: block; }
   .site-nav { display: none; position: absolute; left: var(--pad); right: var(--pad); top: 72px; flex-direction: column; align-items: stretch; gap: 0; padding: 12px; background: var(--navy-950); border: 1px solid var(--line-light); }
