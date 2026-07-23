@@ -28,7 +28,7 @@ const projects = [
     type: "Research · Soft robotics",
     description: "CAD development and TPU pocket iterations for a soft robotic gripper, supported by experimental testing and a co-authored publication.",
     skills: ["Soft robotics", "TPU", "Testing"],
-    href: "#angel",
+    href: "/projects/angel",
     visual: "soft"
   }
 ];
@@ -97,9 +97,21 @@ const projects = [
             <a id={project.visual === "fixture" ? "biotex" : project.visual === "soft" ? "angel" : undefined} class="project-card" href={project.href} data-reveal>
               <div class:list={["project-visual", `project-visual--${project.visual}`]} aria-hidden="true">
                 <span class="project-number">{project.index}</span>
-                <div class="schematic">
-                  <span></span><span></span><span></span><span></span>
-                </div>
+                {project.visual === "soft" ? (
+                  <img
+                    class="project-image"
+                    src="/images/angel/angel-gripper-overview.png"
+                    alt=""
+                    width="537"
+                    height="1021"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ) : (
+                  <div class="schematic">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                )}
                 {project.visual === "fixture" && <span class="confidential">Approved details only</span>}
               </div>
               <div class="project-content">
