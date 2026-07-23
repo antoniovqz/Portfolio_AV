@@ -30,6 +30,24 @@ const projects = [
     skills: ["Soft robotics", "TPU", "Testing"],
     href: "/projects/angel",
     visual: "soft"
+  },
+  {
+    index: "04",
+    title: "Bioabsorbable Magnesium Staples",
+    type: "Biomedical research · Implant mechanics",
+    description: "Corrosion-mechanical testing and tensile characterization of magnesium surgical staples across varied bend geometries and progressive degradation conditions.",
+    skills: ["Tensile testing", "Corrosion", "Failure analysis"],
+    href: "/projects/magnesium-staples",
+    visual: "staples"
+  },
+  {
+    index: "05",
+    title: "RF Balloon Catheter Test Bed",
+    type: "Biomedical research · Cardiovascular devices",
+    description: "Three fixture iterations for RF balloon-catheter evaluation, improving tissue positioning, electrode contact, load distribution, and energy-transfer consistency.",
+    skills: ["Fixture design", "RF PCB assembly", "Validation"],
+    href: "/projects/rf-balloon-catheter",
+    visual: "catheter"
   }
 ];
 ---
@@ -117,6 +135,18 @@ const projects = [
                     loading="lazy"
                     decoding="async"
                   />
+                ) : project.visual === "staples" ? (
+                  <div class="staple-visual">
+                    <span></span><span></span><span></span><i></i>
+                  </div>
+                ) : project.visual === "catheter" ? (
+                  <div class="catheter-visual">
+                    <span class="catheter-tube"></span>
+                    <span class="catheter-balloon"></span>
+                    <span class="catheter-electrode catheter-electrode--one"></span>
+                    <span class="catheter-electrode catheter-electrode--two"></span>
+                    <span class="catheter-fixture"></span>
+                  </div>
                 ) : (
                   <div class="schematic">
                     <span></span><span></span><span></span><span></span>

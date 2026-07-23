@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<BaseLayout
+  title="Bioabsorbable Magnesium Staples | Antonio Vazquez"
+  description="Biomedical engineering research on corrosion-mechanical testing and tensile characterization of bioabsorbable magnesium surgical staples."
+>
+  <div id="top" class="page-shell">
+    <Header compact />
+    <main id="main">
+      <section class="case-hero section-pad">
+        <a class="back-link" href="/#work">&larr; Selected work</a>
+        <div class="case-title" data-reveal>
+          <span class="eyebrow">Biomedical research &middot; Implant mechanics</span>
+          <h1>Bioabsorbable magnesium staples</h1>
+          <p>Corrosion-mechanical testing to understand how degradation and bend geometry affect the structural behavior of magnesium surgical staples.</p>
+        </div>
+        <div class="case-cover research-cover" data-reveal aria-label="Abstract test graphic showing magnesium staples across multiple bend geometries and degradation states">
+          <div class="staple-visual" aria-hidden="true"><span></span><span></span><span></span><i></i></div>
+          <p>Ethicon-sponsored research &middot; Ongoing testing</p>
+        </div>
+        <dl class="case-facts" data-reveal>
+          <div><dt>Role</dt><dd>Undergraduate research assistant</dd></div>
+          <div><dt>Focus</dt><dd>Corrosion-mechanical coupling</dd></div>
+          <div><dt>Methods</dt><dd>Tensile testing &amp; failure analysis</dd></div>
+        </dl>
+      </section>
+
+      <section class="case-section section-pad case-section--intro">
+        <div><span class="eyebrow">01 &middot; Research question</span><h2>How does degradation change the mechanical limits of an implant?</h2></div>
+        <div class="prose">
+          <p>Bioabsorbable magnesium staples are intended to provide structural support and then degrade. The design challenge is understanding how that degradation changes strength, deformation, and failure behavior over time.</p>
+          <p>The research couples controlled corrosion conditions with mechanical testing so geometric and material effects can be evaluated together.</p>
+        </div>
+      </section>
+
+      <section class="case-section section-pad">
+        <div><span class="eyebrow">02 &middot; Test design</span><h2>Compare bend geometry across progressive corrosion conditions.</h2></div>
+        <div class="requirement-grid">
+          <article><span>T.01</span><h3>Bend geometry</h3><p>Test varied bend configurations to study how shape influences mechanical response.</p></article>
+          <article><span>T.02</span><h3>Stress-strain response</h3><p>Use tensile testing to identify elastic behavior, yielding, and failure.</p></article>
+          <article><span>T.03</span><h3>Corrosion progression</h3><p>Track how degradation changes structural integrity and performance.</p></article>
+          <article><span>T.04</span><h3>Failure constraints</h3><p>Connect bend radius and observed failure modes to implant-design limits.</p></article>
+        </div>
+      </section>
+
+      <section class="case-section section-pad case-section--dark">
+        <div><span class="eyebrow">03 &middot; Analysis</span><h2>Translate test curves into usable mechanical constraints.</h2></div>
+        <div class="prose">
+          <p>Antonio evaluates tensile stress-strain behavior to identify elastic limits, yield behavior, bend-radius constraints, and failure points across the tested geometries.</p>
+          <p>Comparing those responses under progressive corrosion supports evaluation of degradation-driven failure modes for bioresorbable implant design.</p>
+        </div>
+      </section>
+
+      <section class="case-section section-pad case-results">
+        <div><span class="eyebrow">04 &middot; Research contribution</span><h2>A mechanical evidence base for safer geometry decisions.</h2></div>
+        <div class="prose">
+          <p>The ongoing work connects material degradation, staple geometry, and measured structural performance. Its purpose is to make future implant-design constraints more explicit and defensible.</p>
+          <p>Additional quantitative findings will be added when the research team approves them for public release.</p>
+        </div>
+      </section>
+
+      <section class="next-project section-pad">
+        <span class="eyebrow">Next project</span>
+        <a href="/projects/rf-balloon-catheter"><span>RF balloon catheter test bed</span><span aria-hidden="true">&nearr;</span></a>
+      </section>
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>
