@@ -14,4 +14,4 @@ Run `npm run build`. The static site is written to `dist/`.
 
 ## Before deployment
 
-Review `CONTENT_NEEDED.md`, add the approved resume at `public/resume/Antonio_Vazquez_Resume.pdf`, replace `site` in `astro.config.mjs` with the final Vercel or custom-domain URL, and connect Antonio's public email address in the contact section.
+Review `CONTENT_NEEDED.md`, replace `site` in `astro.config.mjs` with the final Vercel or custom-domain URL, and connect Antonio's public email address in the contact section.
