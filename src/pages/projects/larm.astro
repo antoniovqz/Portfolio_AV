@@ -18,9 +18,17 @@ import Footer from "../../components/Footer.astro";
           <h1>LARM robotic gripper</h1>
           <p>A compact end-effector designed to synchronize claw motion, amplify torque, and integrate with a laboratory robotic manipulator.</p>
         </div>
-        <div class="case-cover" data-reveal aria-label="Temporary schematic placeholder for LARM project media">
-          <div class="case-schematic" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
-          <p>Project photography, CAD renders, and test media will be added after privacy review.</p>
+        <div class="case-cover case-cover--image" data-reveal>
+          <img
+            class="case-cover-image"
+            src="/images/larm/larm-gripper-cad.png"
+            alt="Transparent CAD rendering of the LARM robotic gripper showing its internal three-gear transmission and circular claw"
+            width="1072"
+            height="853"
+            decoding="async"
+            fetchpriority="high"
+          />
+          <p>Transparent housing view reveals the transmission, output linkage, and gripper integration.</p>
         </div>
         <dl class="case-facts" data-reveal>
           <div><dt>Role</dt><dd>Gripper mechanism & integration</dd></div>
