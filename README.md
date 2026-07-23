@@ -14,4 +14,4 @@ Run `npm run build`. The static site is written to `dist/`.
 
 ## Before deployment
 
-Review `CONTENT_NEEDED.md`, replace `site` in `astro.config.mjs` with the final Vercel or custom-domain URL, and connect Antonio's public email address in the contact section.
+Review `CONTENT_NEEDED.md` and connect Antonio's public email address in the contact section. If a custom domain is added later, update `site` in `astro.config.mjs`.
