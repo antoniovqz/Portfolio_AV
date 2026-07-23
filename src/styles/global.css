@@ -83,6 +83,7 @@ button { font: inherit; }
 .project-visual--fixture { background: linear-gradient(145deg, var(--navy-950), var(--blue)); }
 .project-visual--soft { padding: 30px; background: linear-gradient(145deg, var(--navy-950), #5c0835); }
 .project-image { width: min(76%, 285px); height: calc(100% - 44px); padding: 14px; object-fit: contain; background: white; border: 1px solid rgba(255,255,255,.28); box-shadow: 0 24px 30px rgba(0,0,0,.28); }
+.project-image--wide { width: min(88%, 440px); height: auto; max-height: calc(100% - 58px); }
 .project-number { position: absolute; left: 24px; top: 20px; z-index: 2; color: rgba(255,255,255,.55); font-size: 11px; letter-spacing: .16em; }
 .confidential { position: absolute; right: 21px; bottom: 19px; padding: 6px 10px; color: rgba(255,255,255,.65); font-size: 9px; letter-spacing: .15em; text-transform: uppercase; border: 1px solid rgba(255,255,255,.23); }
 .schematic { width: 58%; aspect-ratio: 1.12; position: relative; border: 1px solid rgba(255,255,255,.23); transform: rotate(-4deg); }
@@ -137,6 +138,9 @@ button { font: inherit; }
 .case-title p { grid-column: 2; max-width: 740px; margin: 35px 0 65px; color: rgba(255,255,255,.65); font-size: clamp(17px, 1.5vw, 22px); }
 .case-cover { min-height: 560px; display: grid; place-items: center; position: relative; overflow: hidden; background: linear-gradient(145deg, var(--blue), var(--navy-950) 58%, var(--red)); border: 1px solid var(--line-light); }
 .case-cover > p { position: absolute; left: 30px; bottom: 22px; max-width: 430px; margin: 0; color: rgba(255,255,255,.45); font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.case-cover--image { min-height: clamp(420px,55vw,720px); background: #f2f2f2; }
+.case-cover-image { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.case-cover--image > p { z-index: 1; padding: 10px 13px; color: rgba(255,255,255,.78); background: rgba(4,12,24,.88); }
 .case-schematic { width: min(540px, 65%); aspect-ratio: 1.7; position: relative; border: 1px solid rgba(255,255,255,.25); }
 .case-schematic::before, .case-schematic::after { content: ""; position: absolute; left: 50%; top: -28%; width: 1px; height: 156%; background: rgba(237,187,0,.48); transform: rotate(58deg); }
 .case-schematic::after { transform: rotate(-58deg); }
