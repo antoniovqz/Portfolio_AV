@@ -14,4 +14,4 @@ Run `npm run build`. The static site is written to `dist/`.
 
 ## Before deployment
 
-Review `CONTENT_NEEDED.md` and connect Antonio's public email address in the contact section. If a custom domain is added later, update `site` in `astro.config.mjs`.
+Review `CONTENT_NEEDED.md` for the remaining project media and role dates. If a custom domain is added later, update `site` in `astro.config.mjs`.
