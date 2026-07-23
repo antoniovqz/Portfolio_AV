@@ -1,0 +1,103 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<BaseLayout
+  title="ANGEL Soft Robotic Gripper | Antonio Vazquez"
+  description="Research and mechanical design case study for the ANGEL cable-driven soft robotic gripper for gentle fruit harvesting."
+>
+  <div id="top" class="page-shell">
+    <Header compact />
+    <main id="main">
+      <section class="case-hero section-pad">
+        <a class="back-link" href="/#work">&larr; Selected work</a>
+        <div class="case-title" data-reveal>
+          <span class="eyebrow">Research &middot; Soft robotics</span>
+          <h1>ANGEL soft robotic gripper</h1>
+          <p>A lightweight, cable-driven gripper developed to handle delicate fruit with adaptive contact, low mechanical complexity, and tunable grip strength.</p>
+        </div>
+
+        <div class="angel-gallery" data-reveal>
+          <figure>
+            <div class="angel-gallery__media">
+              <img
+                src="/images/angel/angel-gripper-overview.png"
+                alt="CAD overview of the ANGEL gripper with TPU pockets and red cylindrical electronics housing"
+                width="537"
+                height="1021"
+                decoding="async"
+                fetchpriority="high"
+              />
+            </div>
+            <figcaption>Complete gripper assembly and compliant pocket structure.</figcaption>
+          </figure>
+          <figure>
+            <div class="angel-gallery__media">
+              <img
+                src="/images/angel/angel-gripper-internals.png"
+                alt="Transparent CAD view showing the two Dynamixel motors inside the ANGEL gripper housing"
+                width="1146"
+                height="991"
+                decoding="async"
+              />
+            </div>
+            <figcaption>Internal motor packaging and cable-actuation hardware.</figcaption>
+          </figure>
+        </div>
+
+        <dl class="case-facts" data-reveal>
+          <div><dt>Role</dt><dd>Co-author, CAD &amp; TPU pocket iterations</dd></div>
+          <div><dt>Focus</dt><dd>Adaptive, light-touch fruit handling</dd></div>
+          <div><dt>Methods</dt><dd>CAD, 3D printing &amp; experimental testing</dd></div>
+        </dl>
+      </section>
+
+      <section class="case-section section-pad case-section--intro">
+        <div><span class="eyebrow">01 &middot; Challenge</span><h2>Handle delicate fruit without rigid, concentrated contact.</h2></div>
+        <div class="prose">
+          <p>Fruit harvesting requires enough force to secure and detach produce without creating bruises that reduce quality after harvest. Natural differences in fruit size and shape make a single rigid gripping geometry difficult to apply reliably.</p>
+          <p>ANGEL addresses that variation with flexible contact surfaces that conform around the fruit and distribute pressure across a larger area.</p>
+        </div>
+      </section>
+
+      <section class="case-section section-pad">
+        <div><span class="eyebrow">02 &middot; Design</span><h2>A drawstring-inspired mechanism closes soft TPU pockets around the fruit.</h2></div>
+        <div class="prose">
+          <p>Steel cables routed through 3D-printed TPU pockets pull the flexible surfaces inward to envelop the fruit. A second cable path opens the pockets when the closing mechanism is released.</p>
+          <p>Two compact servo motors provide cable actuation and feedback while the cylindrical housing protects the drive hardware and supports integration with a robotic system.</p>
+        </div>
+      </section>
+
+      <section class="case-section section-pad case-section--dark angel-publication">
+        <div>
+          <span class="eyebrow">03 &middot; Publication</span>
+          <h2>ANGEL: A Novel Gripper for Versatile and Light-touch Fruit Harvesting</h2>
+        </div>
+        <div class="publication-panel">
+          <p class="publication-authors">Dharmik Patel, Antonio Rafael Vazquez Pantoja, Jiuzhou Lei, Kiju Lee, Xiao Liang, and Minghui Zheng</p>
+          <p>Experimental validation reported a 0% immediate damage rate and less than 9% bruising after five days for tomatoes within the gripper's effective size range.</p>
+          <div class="publication-actions">
+            <a class="button button--primary" href="https://arxiv.org/abs/2510.18127" target="_blank" rel="noreferrer">Read on arXiv <span aria-hidden="true">&nearr;</span></a>
+            <a class="text-link" href="/publications/ANGEL-publication.pdf" target="_blank">View publication PDF <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section section-pad case-results">
+        <div><span class="eyebrow">04 &middot; Contribution</span><h2>Mechanical development supported a tested, publication-ready research system.</h2></div>
+        <div class="prose">
+          <p>Antonio contributed to CAD development, TPU pocket iterations, experimental testing, and the technical documentation that connected design decisions to measured harvesting performance.</p>
+          <p>The resulting work demonstrates how compliant geometry, simple cable routing, and compact actuator packaging can create a gentler robotic end-effector.</p>
+        </div>
+      </section>
+
+      <section class="next-project section-pad">
+        <span class="eyebrow">Next project</span>
+        <a href="/projects/larm"><span>LARM robotic gripper</span><span aria-hidden="true">&nearr;</span></a>
+      </section>
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>

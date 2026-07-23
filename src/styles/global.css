@@ -81,7 +81,8 @@ button { font: inherit; }
 .project-card:hover { background: #082764; }
 .project-visual { position: relative; min-height: 390px; overflow: hidden; display: grid; place-items: center; color: white; background: var(--navy-800); }
 .project-visual--fixture { background: linear-gradient(145deg, var(--navy-950), var(--blue)); }
-.project-visual--soft { background: linear-gradient(145deg, var(--navy-950), #5c0835); }
+.project-visual--soft { padding: 30px; background: linear-gradient(145deg, var(--navy-950), #5c0835); }
+.project-image { width: min(76%, 285px); height: calc(100% - 44px); padding: 14px; object-fit: contain; background: white; border: 1px solid rgba(255,255,255,.28); box-shadow: 0 24px 30px rgba(0,0,0,.28); }
 .project-number { position: absolute; left: 24px; top: 20px; z-index: 2; color: rgba(255,255,255,.55); font-size: 11px; letter-spacing: .16em; }
 .confidential { position: absolute; right: 21px; bottom: 19px; padding: 6px 10px; color: rgba(255,255,255,.65); font-size: 9px; letter-spacing: .15em; text-transform: uppercase; border: 1px solid rgba(255,255,255,.23); }
 .schematic { width: 58%; aspect-ratio: 1.12; position: relative; border: 1px solid rgba(255,255,255,.23); transform: rotate(-4deg); }
@@ -145,6 +146,11 @@ button { font: inherit; }
 .case-facts div { padding: 28px; border-right: 1px solid var(--line-light); }
 .case-facts dt { margin-bottom: 8px; color: var(--gold); font-size: 9px; letter-spacing: .16em; text-transform: uppercase; }
 .case-facts dd { margin: 0; font-size: 14px; }
+.angel-gallery { display: grid; grid-template-columns: minmax(260px,.72fr) minmax(0,1.28fr); gap: 1px; background: var(--line-light); border: 1px solid var(--line-light); }
+.angel-gallery figure { min-width: 0; margin: 0; display: flex; flex-direction: column; background: var(--navy-950); }
+.angel-gallery__media { min-height: 570px; flex: 1; display: grid; place-items: center; padding: clamp(20px,3vw,44px); overflow: hidden; background: #fff; }
+.angel-gallery img { display: block; width: 100%; height: 100%; max-height: 590px; object-fit: contain; }
+.angel-gallery figcaption { padding: 16px 20px; color: rgba(255,255,255,.58); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
 .case-section { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(55px, 9vw, 140px); border-bottom: 1px solid var(--line); }
 .case-section h2 { font-size: clamp(34px, 4.2vw, 62px); }
 .prose { color: var(--muted); font-size: clamp(16px, 1.25vw, 19px); }
@@ -160,6 +166,11 @@ button { font: inherit; }
 .gear::after { content: ""; position: absolute; inset: 40%; border-radius: 50%; background: var(--gold); }
 .gear--one { width: 150px; left: 15%; top: 12%; }.gear--two { width: 190px; left: 40%; top: 31%; }.gear--three { width: 125px; right: 8%; top: 12%; }
 .case-section--dark .prose { color: rgba(255,255,255,.62); }
+.publication-panel { color: rgba(255,255,255,.68); font-size: clamp(16px,1.2vw,19px); }
+.publication-panel > p { margin: 0 0 24px; }
+.publication-authors { color: white; font-weight: 600; }
+.publication-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 26px; margin-top: 38px; }
+.publication-actions .text-link { color: white; }
 .process-line { grid-column: 1/-1; display: grid; grid-template-columns: repeat(4,1fr); margin-top: 30px; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .process-line article { min-height: 230px; padding: 27px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 .process-line h3 { margin: 62px 0 8px; font: 600 18px var(--font-display); }
@@ -189,6 +200,8 @@ button { font: inherit; }
   .case-title { display: block; }
   .case-title h1 { margin-top: 18px; }
   .case-cover { min-height: 440px; }
+  .angel-gallery { grid-template-columns: 1fr; }
+  .angel-gallery__media { min-height: 440px; }
   .process-line { grid-template-columns: 1fr 1fr; }
 }
 
@@ -209,6 +222,7 @@ button { font: inherit; }
   .back-link { margin-bottom: 45px; }
   .case-title p { margin-bottom: 45px; }
   .case-cover { min-height: 330px; }
+  .angel-gallery__media { min-height: 330px; padding: 18px; }
   .case-facts { grid-template-columns: 1fr; }
   .case-facts div { border-bottom: 1px solid var(--line-light); }
   .process-line { grid-template-columns: 1fr; }
