@@ -2,5 +2,5 @@ import { defineConfig } from "astro/config";
 
 export default defineConfig({
   output: "static",
-  site: "https://example.com"
+  site: "https://portfolio-av-pi.vercel.app"
 });
